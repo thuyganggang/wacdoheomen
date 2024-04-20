@@ -307,7 +307,7 @@ html {
 	display: block;
 	background-color: #f3f4f6;
 	width: 100%;
-	height: 1600px;
+	height: 2600px;
 	border-top: #e6e8eb solid 0.2px;
 }
 
@@ -460,8 +460,9 @@ html {
 
 /* product main */
 .product__main {
-	height: 574px;
+	height: 640px;
 	margin: 40px 160px;
+	border-bottom: #dde0e4 solid 1px;
 }
 
 .product__main-header {
@@ -479,7 +480,7 @@ html {
 	font-weight: 600;
 }
 
-.product__main-header-btn {
+.product__header-btn {
 	display: block;
 	background-color: #2579f2;
 	text-align: center;
@@ -489,7 +490,7 @@ html {
 
 }
 
-.product__main-btn-link {
+.product__btn-link {
 	display: block;
 	height: inherit;
 	text-decoration: none;
@@ -521,6 +522,12 @@ html {
 	margin-bottom: 48px;
 }
 
+.prodcut__main-cont-item-link {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
 .product__main-cont-item-img {
 	display: block;
 	height: 152px;
@@ -542,9 +549,38 @@ html {
 	font-weight: 600;
 }
 
-.product__main-cont-item-discount {
-	position: relative;
+.product__main-cont-item-soldout {
+	display: none;
+	position: absolute;
+	top: 0;
+	margin: 10px 10px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: center;
+	line-height: 28px;
+	color: #fff;
+	height: 28px;
+	width: 84px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.product-soldout--active .product__main-cont-item-soldout {
+	display: block;
+}
+
+.product-soldout--active .product__main-cont-item-img {
+	opacity: 0.4;
+}
+
+
+.product__main-cont-item-sale .product__main-cont-item-discount,
+.product__main-cont-item-sale .product__main-cont-item-percent {
 	display: inline-block;
+}
+
+.product__main-cont-item-discount {
+	display: none;
 	font-size: 1.5rem;
 	color: #7f7f7f;
 	font-weight: 500;
@@ -554,7 +590,7 @@ html {
 }
 
 .product__main-cont-item-percent {
-	display: inline-block;
+	display: none;
 	font-size: 1.3rem;
 	width: 38px;
 	height: 26px;
@@ -564,4 +600,260 @@ html {
 	line-height: 26px;
 	text-align: center;
 	background-color: #dc3545;
+}
+
+.product__main-footer {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.product__main-footer-text {
+	color: #0a59cc;
+	font-size: 1.5rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* hotkeyword */
+.product__hotkeyword {
+	display: block;
+	margin: 0 160px;
+}
+
+.product__hotkeyword-title {
+	display: block;
+	width: 100%;
+	height: 60px;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.product__hotkeyword-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between	;
+	align-items: center;
+	margin: 0;
+}
+
+.product__hotkeyword-item {
+	display: block;
+	width: 182px;
+	height: 80px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.product__hotkeyword-link {
+	display: block;
+	text-decoration: none;
+	width: 182px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+/* trending */
+
+.product__trending {
+	display: block;
+	margin-top: 40px;
+	padding-top: 60px;
+	background-color: #030e20;
+	background-image: url(https://divineshop.vn/static/0de2668c294edf9d5fd8a8647b2c65b6.png);
+	background-repeat: no-repeat;
+	height: 720px;
+}
+
+.product__trending-box {
+	display: block;
+	margin: 0 160px;
+	padding-bottom: 10px;
+	border-bottom: #273345 1px solid;
+}
+
+.product__trending-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.product__trending-header-title {
+	display: block;
+	height: 44px;
+	width: 364px;
+	border: #fff 2px solid;
+	text-align: center;
+	border-radius: 30px;
+
+}
+
+.product__trending-header-icon {
+	display: inline-block;
+	font-size: 2.4rem;
+	color: #dc3545;
+}
+
+.product__trending-header-text {
+	display: inline-block;
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.product__trending-cont-list {
+	
+	margin: 0;
+	list-style: none;
+}
+
+.product__trending-cont-item {
+	display: block;
+	position: relative;
+	width: 284px;
+	height: 214px;
+	margin-bottom: 48px;
+}
+
+.prodcut__trending-cont-item-link {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.product__trending-cont-item-img {
+	display: block;
+	height: 152px;
+	width: 286px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.product__trending-cont-item-title {
+	display: block;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+.product__trending-cont-item-price {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.product__trending-cont-item-sale .product__trending-cont-item-discount,
+.product__trending-cont-item-sale .product__trending-cont-item-percent {
+	display: inline-block;
+}
+
+.product__trending-cont-item-discount {
+	display: none;
+	font-size: 1.5rem;
+	color: #7f7f7f;
+	font-weight: 500;
+	margin: 0 6px;
+	width: auto;
+	text-decoration-line: line-through;
+}
+
+.product__trending-cont-item-percent {
+	display: none;
+	font-size: 1.3rem;
+	width: 38px;
+	height: 26px;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 4px;
+	line-height: 26px;
+	text-align: center;
+	background-color: #dc3545;
+}
+
+.product__trending-cont-item-soldout {
+	display: none;
+	position: absolute;
+	top: 0;
+	margin: 10px 10px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: center;
+	line-height: 28px;
+	color: #fff;
+	height: 28px;
+	width: 84px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.product-soldout--active .product__trending-cont-item-soldout {
+	display: block;
+}
+
+.product-soldout--active .product__trending-cont-item-img {
+	opacity: 0.4;
+}
+
+.product__trending-footer {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.product__trending-footer-text {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* price find */
+
+.product__pricefind {
+	display: block;
+	margin: 40px 160px;
+}
+
+.product__pricefind-title {
+	display: block;
+	width: 100%;
+	height: 60px;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.product__pricefind-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between	;
+	align-items: center;
+	margin: 0;
+}
+
+.product__pricefind-item {
+	display: block;
+	width: 182px;
+	height: 80px;
+	border-radius: 8px;
+	background-color: #fff;
+	border: #e6e8eb 1px solid;
+	overflow: hidden;
+}
+
+.product__pricefind-link {
+	display: block;
+	text-decoration: none;
+	width: 182px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #000;
 }
