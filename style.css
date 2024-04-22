@@ -307,7 +307,7 @@ html {
 	display: block;
 	background-color: #f3f4f6;
 	width: 100%;
-	height: 2600px;
+	height: auto;
 	border-top: #e6e8eb solid 0.2px;
 }
 
@@ -856,4 +856,71 @@ html {
 	font-size: 1.5rem;
 	font-weight: 700;
 	color: #000;
+}
+
+/* product asked account */
+
+.product__askacc {
+	display: flex;	
+	width: 100%;
+	background-color: #000;
+	height: 224px;
+	padding: 0 160px;
+	align-items: center;
+}
+
+.product__askacc-img {
+	flex: 1;
+	margin-left: 30px;
+	width: 250px;
+	height: 190px;
+}
+
+.product__askacc-img-item {
+	display: block;
+}
+
+.product__askacc-cont {
+	flex: 2;
+	color: #fff;
+}
+
+.product__askacc-title {
+	display: block;
+	font-size: 2.6rem;
+	font-weight: 600;
+}
+
+.product__askacc-desscription {
+	display: block;
+	font-size: 1.5rem;
+	margin: 16px 0;
+}
+
+.product__askacc-btn {
+  display: inline-block;
+  width: 114px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  background-color: #2579f2;
+  border-radius: 8px;
+}
+
+.product__askacc-btn-link {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.product__askacc-login {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	margin-left: 8px;
+}
+
+.product__askacc-login-link {
+	color: #fff;
 }
