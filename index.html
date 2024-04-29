@@ -62,10 +62,8 @@
                
             </div>
             <div class="header__mainUI-login">
-                <a href="#" class="header__mainUI-login-link">
                     <i class="header__mainUI-icon fa-solid fa-user"></i>
                     <div class="header__mainUI-text">Đăng nhập / Đăng ký</div>
-                </a>
                
             </div>
             <div class="header__mainUI-cart">
@@ -625,18 +623,191 @@
                     <div class="product__askacc-cont">
                         <div class="product__askacc-title">Bạn chưa có tài khoản?</div>
                         <div class="product__askacc-desscription">Hãy tạo ngay một tài khoản để sử dụng đầy đủ các tính năng, tích lũy ưu đãi khi thanh toán các sản phẩm và tham gia vào chương trình Giới thiệu bạn bè nhận hoa hồng vĩnh viễn tại Divine Shop.</div>
-                        <div class="product__askacc-btn">
-                            <a href="#" class="product__askacc-btn-link">Đăng ký ngay</a>
+                        <div class="product__askacc-btn" id="askacc-register">
+                            <span class="product__askacc-btn-link">Đăng ký ngay</span>
                         </div>
                         <div class="product__askacc-login">
                             Hoặc bạn đã có tài khoản?
-                            <a href="#" class="product__askacc-login-link">Đăng nhập</a>
+                            <span class="product__askacc-login-link" id="askacc-login">Đăng nhập</span>
                         </div>
                     </div>
                 </div>
-                
+                <div class="product__payment">
+                    <a href="#" class="product__payment-link">
+                        <img src="https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg" alt="Momo" class="product__payment-img">
+                        <img src="https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg" alt="Vnpay" class="product__payment-img">
+                        <img src="https://cdn.divineshop.vn/static/464c7c79044dea88e86adf0e1b9c064c.svg" alt="Visa" class="product__payment-img">
+                        <img src="https://cdn.divineshop.vn/static/ddb866eb1214c914ea62417879046b99.svg" alt="Mastercard" class="product__payment-img">
+                        <span class="product__payment-text">và nhiều hình thức thanh toán khác</span>
+                    </a>
+                </div>
             </div>
     </constainer>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__social">
+        <ul class="footer__social-list">
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="https://cdn.divineshop.vn/static/4ba68c7a47305b454732e1a9e9beb8a1.svg" alt="facebook" class="footer__social-img">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="https://cdn.divineshop.vn/static/20334129395885adefc2e5217043f670.svg" alt="Youtube" class="footer__social-img">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="https://cdn.divineshop.vn/static/4ae438165f9d5ea0fc6ff3da6051f938.svg" alt="Instagram" class="footer__social-img">
+                </a>
+            </li>
+        </ul>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info-cont">
+                <div class="footer__info-box">
+                    <div class="footer__info-title">GIỚI THIỆU</div>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Game bản quyền là gì?</a>
+                        </li>
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Giới thiệu Divine Shop</a>
+                        </li>
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Điều khoản dịch vụ</a>
+                        </li>
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info-box">
+                    <div class="footer__info-title">TÀI KHOẢN</div>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-item">
+                            <span class="footer__info-link" id="footer-login">Đăng nhập</span>
+                        </li>
+                        <li class="footer__info-item">
+                            <span class="footer__info-link" id="footer-register">Đăng ký</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info-box">
+                    <div class="footer__info-title">TÀI KHOẢN</div>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-item">
+                            Hotline tự động
+                            <a href="#" class="footer__info-link" style="color: red;">1900 633 305</a>
+                        </li>
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Liên hệ Hỗ trợ</a>
+                        </li>
+                        <li class="footer__info-item">
+                            <a href="#" class="footer__info-link">Chat với CSKH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info-certificate">
+                <div class="footer__info-certificate-item">
+                    <img src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=18522dc6-fdd6-4b49-ab40-395a79849050" alt="" class="footer__info-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- model layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <i class="modal__inner-close-btn fa-solid fa-xmark"></i>
+                <!-- login -->
+                <div class="auth-form" id="auth-form-login">
+                    <div class="auth-form__cont">
+                        <div class="auth-form__header">
+                            <span class="auth-form__switch-btn auth--active">Đăng nhập</span>
+                            <span class="auth-form__switch-btn" id="btn-register">Đăng ký</span>
+                            <p class="auth-form__description">Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn</p>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email hoặc tên đăng nhập">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <a href="#" class="auth-form__aside-link">Bạn quên mật khẩu?</a>
+                        </div>  
+                        <div class="auth-form__control">
+                            <button class="auth-form__btn">Đăng nhập</button>
+                        </div>
+                        <div class="auth-form__other">
+                            <p class="auth-form__other-text">Hoặc đăng nhập bằng</p>
+                            <div class="auth-form__other-login">
+                                <a href="#" class="auth-form__other-link">
+                                    <img src="https://cdn.divineshop.vn/static/0b314f30be0025da88c475e87a222e5a.svg" alt="" class="auth-form__other-img">
+                                </a>
+                                <a href="#" class="auth-form__other-link">
+                                    <img src="https://cdn.divineshop.vn/static/4ba68c7a47305b454732e1a9e9beb8a1.svg" alt="" class="auth-form__other-img">
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__display">
+                        <img src="https://cdn.divineshop.vn/static/368e705d45bfc8742aa9d20dbcf4c78c.svg" alt="" class="modal__display-img">
+                    </div>    
+                </div>
+                <!-- register -->
+                <div class="auth-form" id="auth-form-register">
+                    <div class="auth-form__cont">
+                        <div class="auth-form__header">
+                            <span class="auth-form__switch-btn" id="btn-login">Đăng Nhập</span>
+                            <span class="auth-form__switch-btn auth--active">Đăng ký</span>
+                            <p class="auth-form__description">Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn</p>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Họ và tên">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email hoặc tên đăng nhập">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <input type="checkbox" class="auth-form__aside-checkbox">
+                            <p class="auth-form__aside-text">
+                                Bạn đồng ý với<a href="#" class="auth-form__aside-link"> Điều khoản dịch vụ của Divine Shop</a>
+                            </p> 
+                            
+                        </div>  
+                        <div class="auth-form__control">
+                            <button class="auth-form__btn">Tạo tài khoản</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__display">
+                        <img src="https://cdn.divineshop.vn/static/235dccb09069e3d4eebc6227236f9dc2.svg" alt="" class="auth-form__display-img">
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 
