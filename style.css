@@ -349,6 +349,12 @@ body {
 .product__category-item {
 	padding: 4px 8px;
 	width: 206px;
+	margin: 0 4px;
+	border-radius: 4px;
+}
+
+.product__category-item:hover {
+	background-color: rgba(37, 121, 242, 0.1);
 }
 
 .product__category-item-link {

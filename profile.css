@@ -1,0 +1,235 @@
+.category__item {
+    position: relative;
+}
+
+.product__category-list-block {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -24px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.category__item:hover .product__category-list-block {
+    display: block;
+}
+
+.product__category--hover:hover .product__category-list-block {
+    display: block;
+}
+
+.container {
+    display: flex;
+    background-color: #f3f4f6;
+    justify-content: space-between;
+    height: auto;
+}
+
+.container__nav {
+    flex: 1;
+    margin-top: 20px;
+    margin-left: 160px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 186px;
+}
+
+.container__nav-list {
+    list-style: none;
+}
+
+.container__nav-item {
+    display: block;
+    height: 62px;
+    width: 242px;
+    line-height: 62px;
+    border-bottom: #e6e8eb 1px solid;
+    padding-left: 40px;
+}
+
+.container__nav-item.nav--active {
+    border-left: #2579f2 6px solid;
+}
+
+.container__nav-item.nav--active .container__nav-icon,
+.container__nav-item.nav--active .container__nav-text {
+    color: #000;
+}
+
+.container__nav-link {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.container__nav-link:hover .container__nav-icon,
+.container__nav-link:hover .container__nav-text {
+    color: #000;
+}
+
+.container__nav-icon {
+    font-size: 1.6rem;
+    color: #6b7280;
+}
+
+.container__nav-text {
+    font-size: 1.6rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.container__profile {
+    margin-top: 20px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    flex: 4;
+    width: 100%;
+}
+
+.container__profile-info {
+    display: block;
+    width: auto;
+    margin: 40px 40px;
+    border-bottom: #dde0e4 solid 1px;
+}
+
+.profile__info-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.profile__info-box {
+    margin-top: 10px;
+}
+
+
+.profile__info-item {
+    margin: 8px 0;
+}
+
+.profile__info-item-title {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.profile__info-item-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.container__profile-avatar {
+    display: flex;
+    margin: 40px 40px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: #dde0e4 solid 1px;;
+
+}
+
+.profile__avatar-control {
+    border-right:  #dde0e4 solid 1px;
+    padding-right: 20px;
+}
+
+.profile__avatar-control-img {
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile__avatar-control-btn {
+    width: 132px;
+    height: 42px;
+    border-radius: 8px;
+    border:  #dde0e4 solid 1px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2579f2;
+}
+
+
+.profile__avatar-note {
+    margin-left: 10px;
+}
+
+.profile__avatar-text {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding: 8px 0;
+}
+
+.container__profile-indi {
+    display: block;
+    margin: 40px 40px;
+}
+
+.profile__indi-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.profile__indi-form {
+    margin-top: 20px;
+}
+
+.profile__indi-group {
+    display: block;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.profile__indi-input {
+    width: 336px;
+    height: 46px;
+    border-radius: 8px;
+    border:  #dde0e4 solid 1px;;
+    font-size: 1.4rem;
+    padding: 14px 0 0 14px;
+}
+
+.profile__indi-tag {
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #b6a3af;
+    transition: 0.3s;
+}
+
+.value--active+label{
+    top: 1px;
+    left: 14px;
+    font-size: 1.2rem;
+    color: #2579f2;
+}
+
+.profile__indi-input:focus+label,.value--active+label{
+    top: 1px;
+    left: 14px;
+    font-size: 1.2rem;
+    color: #2579f2;
+}
+
+.profile-indi__btn {
+    width: 108px;
+    height: 42px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2579f2;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+
