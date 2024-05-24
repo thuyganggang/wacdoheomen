@@ -1,0 +1,147 @@
+.container__history {
+    margin-top: 20px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    flex: 4;
+    width: 100%;
+}
+
+.history-block {
+    margin: 20px 20px;
+}
+
+.history-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.history-description {
+    font-size: 1.6rem;
+    margin: 10px 10px;
+}
+
+
+.history-form {
+    display: flex;
+    border-top: #dde0e4 solid 1px;
+    margin-top: 20px;
+    padding-top: 8px;
+    
+}
+
+.history-form-group {
+    display: block;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.history-form-input {
+    border-radius: 8px;
+    border:  #dde0e4 solid 1px;;
+    font-size: 1.4rem;
+    padding: 14px 0 0 14px;
+}
+
+.history-form-input--1 {
+    width: 160px;
+    height: 46px;
+}
+
+.history-form-input--2 {
+    width: 120px;
+    height: 46px;
+}
+
+.history-form-input--3 {
+    width: 120px;
+    height: 46px;
+}
+
+.history-form-input--4 {
+    width: 160px;
+    height: 46px;
+}
+
+.history-form-input--5 {
+    width: 160px;
+    height: 46px;
+}
+
+
+.history-form-tag {
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #b6a3af;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.value--active+label{
+    top: 1px;
+    left: 14px;
+    font-size: 1.2rem;
+    color: #2579f2;
+}
+
+.history-form-input:focus+label,.value--active+label{
+    top: 1px;
+    left: 14px;
+    font-size: 1.2rem;
+    color: #2579f2;
+}
+
+.history-form-btn {
+    width: 78px;
+    height: 46px;
+    background-color: #2579f2;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 10px;
+}
+
+.history-form-btn__icon {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.history-form-btn__text {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.history-cont {
+    margin: 10px 10px;
+}
+
+.history-table {
+    width: 100%;
+    border-radius: 8px;
+    border: #b6a3af 1px solid;
+}
+
+.history-table-list {
+    height: 40px;
+}
+
+.history-table-item {
+   font-size: 1.4rem;
+   padding-left: 10px;
+   border-left: #b6a3af 1px solid;
+}
+
+.history-table-list__info {
+    display: none;
+}
+
+.history-table-list__info--find.history-table-list__info {
+    display: table-row;
+}
+
+

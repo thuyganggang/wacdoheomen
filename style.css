@@ -336,6 +336,7 @@ body {
 	border: #e6e8eb solid 1px;
 	border-radius: 8px;
 	margin-right: 18px;
+	z-index: 10;
 }
 
 .product__category-list {

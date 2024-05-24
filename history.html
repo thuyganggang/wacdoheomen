@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./history.css">
     <link rel="stylesheet" href="./bootstrap.css">
     <link href="./fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
     
@@ -125,12 +126,12 @@
                 </div>
                 <div class="category__item">
                     Danh mục sản phẩm
-                    <div class="category-list-block category-list-block--hover">
-                        <ul class="category-list">
-                            <li class="category-item">
-                                <a href="#" class="category-item-link">
-                                    <i class="category-item-icon fa-solid fa-gamepad"></i>
-                                    <div class="category-item-text">Giải trí</div>
+                    <div class="product__category-list-block product__category--hover">
+                        <ul class="product__category-list">
+                            <li class="product__category-item">
+                                <a href="#" class="product__category-item-link">
+                                    <i class="product__category-icon fa-solid fa-gamepad"></i>
+                                    <div class="product__category-text">Giải trí</div>
                                 </a>
                             </li>
                             <li class="product__category-item">
@@ -223,65 +224,79 @@
     </header>
     <!-- container -->
     <container class="container">
-        <div class="product">
-            <div class="product__show">
-                <img src="https://cdn.divineshop.vn/image/catalog/OpenAI - ChatGPT-37620.jpg?hash=1672200973" alt="" class="product__show-img">
-                <span class="product__show-more">Xem thêm ảnh</span>
-            </div>
-            <div class="product__cont">
-                <div class="product__cont-title">Tài khoản OpenAI - ChatGPT</div>
-                <div class="product__cont-status">
-                    <i class="product__status-icon fa-solid fa-box"></i>
-                    <span class="product__status-text">Trạng thái:</span>
-                    <span class="product__status-info">Còn hàng</span>
-                </div>
-                <div class="product__cont-cate">
-                    <i class="product__cate-icon fa-solid fa-tag"></i>
-                    <span class="product__cate-text">Thể loại</span>
-                    <span class="product__cate-info">
-                        <a href="#" class="product__cate-link">openai</a>
-                        <a href="#" class="product__cate-link">chatgpt</a>
-                        <a href="#" class="product__cate-link">học tập</a>
-                    </span>
-                </div>
-                <div class="product__cont-price">29.000đ</div>
-                <div class="product__cont-discount">200.000đ</div>
-                <div class="product__cont-percent">-62%</div>
-                <div class="product__cont-package">
-                    <span class="product__package-text">Chọn gói sản phẩm</span>
-                    <ul class="product__package-list">
-                        <li class="product__package-item package--active">
-                            <a href="#" class="product__package-link">TK thường</a>
-                        </li>
-                        <li class="product__package-item">
-                            <a href="#" class="product__package-link">Nâng cấp Plus</a>
-                        </li>
-                        <li class="product__package-item">
-                            <a href="#" class="product__package-link">TK ChatGPT Plus</a>
-                        </li>
-                        <li class="product__package-item package--soldout">
-                            <a href="#" class="product__package-link">Evote AI</a>
-                        </li>
-                        <li class="product__package-item">
-                            <a href="#" class="product__package-link">Evote AI</a>
-                        </li>
-                        <li class="product__package-item package--soldout">
-                            <a href="#" class="product__package-link">Evote AI</a>
-                        </li>
-                        <li class="product__package-item">
-                            <a href="#" class="product__package-link">Evote AI</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product__cont-control">
-                    <button class="product__control-buy product-btn">
-                        <i class="product__control-buy-icon fa-solid fa-credit-card"></i>
-                        <span class="product__control-buy-text">Mua ngay</span>
+        <div class="container__nav">
+            <ul class="container__nav-list">
+                <li class="container__nav-item ">
+                    <a href="#" class="container__nav-link">
+                        <i class="container__nav-icon fa-solid fa-user"></i>
+                        <span class="container__nav-text">Tài Khoản</span>
+                    </a>
+                </li>
+                <li class="container__nav-item nav--active">
+                    <a href="#" class="container__nav-link">
+                        <i class="container__nav-icon fa-solid fa-cart-shopping"></i>
+                        <span class="container__nav-text">Lịch sử mua hàng</span>
+                    </a>
+                </li>
+                <li class="container__nav-item">
+                    <a href="#" class="container__nav-link">
+                        <i class="container__nav-icon fa-solid fa-lock"></i>
+                        <span class="container__nav-text">Mật khẩu và bảo mật</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container__history">
+            <div class="history-block">
+                <div class="history-title">Lịch sử đơn hàng</div>
+                <span class="history-description">Hiển thị thông tin các sản phẩm bạn đã mua tại Divine Shop</span>
+                <div class="history-form">
+                    <div class="history-form-group">
+                        <input type="text" class="history-form-input history-form-input--1">
+                        <label class="history-form-tag">Mã đơn hàng</label>
+                    </div>
+                    <div class="history-form-group">
+                        <input type="text" class="history-form-input history-form-input--2">
+                        <label class="history-form-tag">Số tiền từ</label>
+                    </div>
+                    <div class="history-form-group">
+                        <input type="text" class="history-form-input history-form-input--3">
+                        <label class="history-form-tag">Số tiền đến</label>
+                    </div>
+                    <div class="history-form-group">
+                        <input type="date" class="history-form-input history-form-input--4 value--active">
+                        <label class="history-form-tag">Từ ngày</label>
+                    </div>
+                    <div class="history-form-group">
+                        <input type="date" class="history-form-input history-form-input--5 value--active">
+                        <label class="history-form-tag">Đến ngày</label>
+                    </div>
+                    <button class="history-form-btn">
+                        <i class="history-form-btn__icon fa-solid fa-filter"></i>
+                        <span class="history-form-btn__text">Lọc</span>
                     </button>
-                    <button class="product__control-addcart product-btn">
-                        <i class="product__control-addcart-icon fa-solid fa-cart-shopping"></i>
-                        <span class="product__control-addcart-text">Thêm vào giỏ</span>
-                    </button>
+                </div>
+                <div class="history-cont">
+                    <table class="history-table">
+                        <thead>
+                            <tr class="history-table-list">
+                                <th class="history-table-item">Thời gian</th>
+                                <th class="history-table-item">Mã đơn hàng</th>
+                                <th class="history-table-item">Sản phẩm</th>
+                                <th class="history-table-item">Tổng tiền</th>
+                                <th class="history-table-item">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="history-table-list history-table-list__info history-table-list__info--find">
+                                <th class="history-table-item history-table-item__info">12:30:20 01/01/2024</th>
+                                <th class="history-table-item history-table-item__info">DH01</th>
+                                <th class="history-table-item history-table-item__info">Gamepass</th>
+                                <th class="history-table-item history-table-item__info">100.000vnđ</th>
+                                <th class="history-table-item history-table-item__info">Còn hàng</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -360,95 +375,5 @@
             </div>
         </div>
     </footer>
-    <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <div class="modal__inner">
-                <i class="modal__inner-close-btn fa-solid fa-xmark"></i>
-                <!-- login -->
-                <div class="auth-form" id="auth-form-login">
-                    <div class="auth-form__cont">
-                        <div class="auth-form__header">
-                            <span class="auth-form__switch-btn auth--active">Đăng nhập</span>
-                            <span class="auth-form__switch-btn" id="btn-register">Đăng ký</span>
-                            <p class="auth-form__description">Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn</p>
-                        </div>
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email hoặc tên đăng nhập">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Mật khẩu">
-                            </div>
-                        </div>
-                        <div class="auth-form__aside">
-                            <a href="#" class="auth-form__aside-link">Bạn quên mật khẩu?</a>
-                        </div>  
-                        <div class="auth-form__control">
-                            <button class="auth-form__btn">Đăng nhập</button>
-                        </div>
-                        <div class="auth-form__other">
-                            <p class="auth-form__other-text">Hoặc đăng nhập bằng</p>
-                            <div class="auth-form__other-login">
-                                <a href="#" class="auth-form__other-link">
-                                    <img src="https://cdn.divineshop.vn/static/0b314f30be0025da88c475e87a222e5a.svg" alt="" class="auth-form__other-img">
-                                </a>
-                                <a href="#" class="auth-form__other-link">
-                                    <img src="https://cdn.divineshop.vn/static/4ba68c7a47305b454732e1a9e9beb8a1.svg" alt="" class="auth-form__other-img">
-                                </a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__display">
-                        <img src="https://cdn.divineshop.vn/static/368e705d45bfc8742aa9d20dbcf4c78c.svg" alt="" class="modal__display-img">
-                    </div>    
-                </div>
-                <!-- register -->
-                <div class="auth-form" id="auth-form-register">
-                    <div class="auth-form__cont">
-                        <div class="auth-form__header">
-                            <span class="auth-form__switch-btn" id="btn-login">Đăng Nhập</span>
-                            <span class="auth-form__switch-btn auth--active">Đăng ký</span>
-                            <p class="auth-form__description">Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn</p>
-                        </div>
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Họ và tên">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email hoặc tên đăng nhập">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Số điện thoại">
-                            </div>
-                        </div>
-                        <div class="auth-form__aside">
-                            <input type="checkbox" class="auth-form__aside-checkbox">
-                            <p class="auth-form__aside-text">
-                                Bạn đồng ý với<a href="#" class="auth-form__aside-link"> Điều khoản dịch vụ của Divine Shop</a>
-                            </p> 
-                            
-                        </div>  
-                        <div class="auth-form__control">
-                            <button class="auth-form__btn">Tạo tài khoản</button>
-                        </div>
-                    </div>
-                    <div class="auth-form__display">
-                        <img src="https://cdn.divineshop.vn/static/235dccb09069e3d4eebc6227236f9dc2.svg" alt="" class="auth-form__display-img">
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./product.js"></script>
+    <script src="./history.js"></script>
 </body>

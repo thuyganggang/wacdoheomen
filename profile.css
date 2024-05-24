@@ -126,7 +126,7 @@
     margin: 40px 40px;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: #dde0e4 solid 1px;;
+    border-bottom: #dde0e4 solid 1px;
 
 }
 
@@ -204,6 +204,7 @@
     font-weight: 500;
     color: #b6a3af;
     transition: 0.3s;
+    pointer-events: none;
 }
 
 .value--active+label{
