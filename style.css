@@ -95,6 +95,10 @@ body {
 	margin: 0 160px;
 }
 
+.header__mainUI-unlogin {
+	display: none;
+}
+
 .header__mainUI-logo {
 	display: block;
 }
@@ -113,6 +117,72 @@ body {
 	line-height: 70px;
 	font-size: 2.2rem;
 }
+
+.header__mainUI-inlogin {
+	display: block;
+	position: relative;
+}
+
+.header__mainUI-inlogin-img {
+	display: inline-block;
+	width: 49px;
+	height: 49px;
+	margin-bottom: 6px;
+	border-radius: 50%;
+}
+
+.header__mainUI-inlogin-name {
+ 	display: inline-block;
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.header__mainUI-inlogin:hover .heaeder__mainUI-inlogin-nav {
+	display: block;
+}
+
+.heaeder__mainUI-inlogin-nav {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	width: 160px;
+	height: auto;
+	z-index: 6;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header__mainUI-inlogin-item {
+	font-size: 1.5rem;
+	padding: 8px;
+	margin: 4px;
+}
+
+.header__mainUI-inlogin-item:first-child:hover {
+	background-color: #fff;
+}
+
+.header__mainUI-inlogin-item:hover {
+	background-color: rgba(37, 121, 242, 0.1);
+}
+
+.header__mainUI-inlogin-text {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.header__mainUI-inlogin-cash {
+	padding: 8px;
+	font-weight: 600;
+}
+
+.header__mainUI-inlogin-icon {
+	color: #0a59cc;
+}
+
+
 
 .header__mainUI-search {
 	display: flex;
@@ -149,11 +219,6 @@ body {
 	cursor: pointer;
 	transition: 0.3s;
 }
-
-.header__mainUI-login:hover {
-	opacity: 0.6;
-}
-
 
 .header__mainUI-icon {
 	display: inline-block;
